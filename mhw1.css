@@ -1,0 +1,236 @@
+nav{
+    display: flex;
+    height: 5%;
+    justify-content: space-between;
+    margin-top: 0.8%; 
+    position: absolute;
+    right:0;
+    left:2%;
+}
+
+#header{
+    width: 155vh;
+    color: rgb(255, 255, 255);
+    font-size:1.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#links{
+    display: flex;
+    width: 40%;
+    justify-content:space-around;
+    align-items: center;
+    color:white;
+    font-size: 1.6em;
+    font-family:sans-serif;
+    font-weight: bold;
+    width: 120%;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color:rgb(235, 217, 217);
+    cursor: pointer;
+}
+a.button:hover {
+    background-color: white;
+    color: rgb(99, 94, 94);
+}
+
+.button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+body{
+    position: relative;
+    margin:0;
+}
+#collegamenti{
+    font-family: 'Hurricane', cursive;
+    font-size: 1.8em;
+    color: rgb(196, 204, 201);
+}
+header{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-image:url(Immagine1.png) ;
+    height: 80vh;
+    position: relative;
+}
+
+#overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    background-color:rgba(0, 0,0, 0.3);
+}
+
+h1{ 
+    top: 35%;
+    position: absolute;
+    bottom: 45%;
+    text-align: center;
+}
+
+h1 strong{
+    font-size: 2.5em;
+    color: rgb(222, 236, 236);
+    font-family: 'Nunito', sans-serif;
+    font-style:inherit;
+    line-height: 122%;
+    font-weight:1000;
+}
+
+h1 em{
+    font-size: 1.1em;
+    color: rgb(203, 216, 216);
+    font-family: 'Ispirazione', sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(234, 243, 242);
+    border-radius: 6px;
+}
+body{
+    background-image:url(sfondo21.webp);
+}
+article{
+    text-align:center;
+}
+h2{
+    text-align:center;
+    color:rgb(82, 47, 7);
+    font-family: 'Hurricane', cursive;
+    font-size:3.3rem;
+    
+}
+h3{
+    margin-top:-20px;
+    text-align: center;
+    font-family: 'Ispirazione', sans-serif;
+    color:rgb(58, 50, 41)
+}
+
+div.testo{
+    width: 70%;
+}
+article{
+    font-size: 1.2em;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:rgb(27, 14, 3);
+    margin: bottom 2%;;
+    text-align:center;
+}
+img{
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width:40%;
+    height:10%;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    height: 7.2vh;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    bottom:0;
+    right: 0;
+    left:0;
+
+}
+footer div{
+    color: rgb(209, 197, 197);
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Hurricane', cursive;
+}
+#foot2{
+    display:none;
+}
+
+#menu div {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#menu {
+    display: none;
+    margin-top:2%;
+    margin-right:3%;
+    cursor: pointer;
+    position: fixed;
+    
+    right: 0.3%;
+    border: 3px solid rgb(63, 41, 7);
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(63, 41, 7);
+    z-index:1;
+    
+  }
+
+@media (max-width: 700px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+}
+@media (max-width: 1400px){
+    img{
+        width: 100%;
+        height:100%;
+        margin-bottom:13%;
+    }
+}
+
+@media (max-width: 400px) {
+    #foot1{
+        display:none;
+    }
+    footer div{
+        font-size:1.2em;
+    }
+    #foot2{
+        display:block;
+    }
+    article{
+        text-align: justify;
+        font-size:1.2em;
+        line-height:150%;
+    }
+    div.testo{
+        width:90%;
+    }
+    section{
+        margin-right:8%;
+        margin-left:8%;
+    }
+    h1{
+        font-size:90%;
+    }
+    
+}
+
+
+    
